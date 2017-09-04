@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Cooking Together</title>
+<link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
+
+<!--Nivo Slider-->
+   <link rel="stylesheet" href="js/slide/default.css" type="text/css" media="screen" />
+   <link rel="stylesheet" href="js/slide/nivo-slider.css" type="text/css" media="screen" />
+<!--Nivo Slider-->
+
+<!--FANCY BOX-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write('<script src="js/jquery-1.4.3.min.js"><\/script>');
+	</script>
+	<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("a#fancybox").fancybox();	 
+		});
+	</script>
+	<style>
+	.fancy a img {
+	border: 1px solid #BBB;
+	padding: 2px;
+	margin: 10px 20px 10px 0;
+	vertical-align: top;
+	}
+	.fancy a img.last {
+	margin-right: 0;	
+	}
+	</style>
+<!--FANCY BOX-->
+
+
+
+<link rel="icon" href="http://cookingtogether.ru/favicon.ico" 
+type="image/x-icon" />
+<link rel="shortcut icon" href="http://cookingtogether.ru/favicon.ico"
+type="image/x-icon" />
+</head>
+
+<body>
+<div class="header">
+<div id="logo">
+		<a href="index.html">
+		<img src="images/Logo.JPG">
+		</a>
+		<!--<span>Free HTML5 Template</span>-->
+	</div>
+
+	<ul id="menu" class="menu">
+		<li class="current"><a href="contact.html">Предложить рецепт</a></li>
+		<li><a href="about.html">О нас</a></li>
+		<li><a href="index.html">Главная</a></li>
+	</ul>
+</div>
+
+<div id="body-wrapper" class="clearfix">
+  <div class="box"><div style="padding-top:40px;" class="slider-wrapper theme-default"><div id="slider" class="nivoSlider">
+  
+          <a href="zakuski.html">
+          <img src="images/slide1.jpg" alt="slider image 1"/></a>
+		  <a href="deserts.html">
+          <img src="images/slide2.jpg"  alt="slider image 2"/></a>
+          <a href="drinks.html">
+          <img src="images/slide3.jpg"  alt="slider image 3"/></a>
+		</div>
+    </div>
+ </div>
+
+	<div class="box">
+		<h1></h1>
+    </div>
+
+  <div class="clear"></div>
+
+	<div class="clear"></div>
+
+	<div id="footer-main"><!--start footer-main-->
+	</div>
+<!--end footer-main-->
+
+	<div id="footer">
+		<p id="footer-text">&copy; Created 2013 by monk, toert, InBeing, Kostya, Sunset</p>
+  </div>
+
+</div><!--end-body wrapper-->
+
+    <!--Nivo Slider-->
+<script type="text/javascript" src="js/slide/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+	<!--Nivo Slider-->
+	
+</body>
+</html>

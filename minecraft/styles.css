@@ -1,0 +1,252 @@
+/* Template produced (html css) by  aleps, ICQ – 580444803/531124 | E-mail: aleps[.]rp@gmail.com */
+/* Comp image: lapochka */
+
+/* thank you all =\ */
+
+*{
+	margin: 0 auto;
+	padding: 0 auto;
+	outline: 0;
+}
+html{
+	background: #fff  repeat-x center top url(images/body.png);
+}
+body {
+   width:900px;
+   color: #555;
+   font: .84em/1.42 Tahoma, Arial, Helvetica, sans-serif;
+}
+.ctr{
+	clear: both;
+}
+a{
+	color:#555555;
+	text-decoration: underline;
+}
+a:hover{
+	color:#1b1b1b;
+	text-decoration:none;
+}
+/* Новый блок конструирования ---------------------------- */
+.formasss {
+	padding:0px;
+}
+.logo{
+	margin-top:10px;
+	background: no-repeat url(images/logo.png);
+	height:34px; width:146px;
+}
+.menu{
+	margin-top:6px;
+	height:50px;
+	background: no-repeat url(images/menu.png);
+}
+.menu ul li {
+	float:left;
+	list-style-type: none;
+	padding: 15px 15px 1px 15px;
+	color:#FFF;
+   font: 13px Myriad Pro, Arial, Helvetica, sans-serif;
+   text-transform: uppercase;
+   text-shadow:#6a8657 0px -1px 0px;
+}
+.menu a {
+	text-decoration:none;
+	color:#FFF;
+}
+.telo{
+	margin-top:10px;
+	padding:5px;
+	background:#f2f2f2;
+	border-radius: 3px 3px 3px 3px; /* откугление */
+	-moz-border-radius: 3px 3px 3px 3px; /* откугление Firefox */
+	-webkit-border-radius: 3px 3px 3px 3px; /* откугление Safari */
+}
+.loging{
+	margin-top:1px;
+	background:#e6e6e6;
+	height:35px;
+	border-radius: 3px 3px 3px 3px; /* откугление */
+	-moz-border-radius: 3px 3px 3px 3px; /* откугление Firefox */
+	-webkit-border-radius: 3px 3px 3px 3px; /* откугление Safari */
+}
+.lg_forma,
+.lg_forma input,
+.lg_forma button,
+.lg_forma label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+.lg_forma input{
+	margin-left:5px;
+	margin-top:5px;
+	border-top:  1px solid #b8b8b8;
+	padding:4px 3px;
+	color:#4c4c4c;
+	border-radius: 3px 3px 3px 3px; 
+	-moz-border-radius: 3px 3px 3px 3px; 
+	-webkit-border-radius: 3px 3px 3px 3px; 
+	background: repeat-x url(images/dgdg.png );
+}
+.lg_forma button{
+	background: repeat-x url(images/voiti.png );
+	height:25px;
+	width:53px;
+	color:#fff;
+	margin-right:10px;
+}
+.lg_forma a{
+	color:#526647;
+	font-size:11px;
+}
+.content{
+	float: left;
+	margin-top:5px;
+	width:690px;
+}
+.rightmenu{
+	float:right;
+	width:195px;
+	margin-top:5px;
+	margin-left:5px;
+}
+.rgm_category{
+	background:  repeat-x url(images/menunew.png);
+	height:24px;
+	
+	padding-top:6px;
+	text-align:center;
+	color:#FFF;
+	font-size:12px;
+	 text-shadow:#3f5233 0px -1px 0px;
+	 font-weight:bold;
+	
+	border-radius: 2px 2px 2px 2px; /* откугление */
+	-moz-border-radius: 2px 2px 2px 2px; /* откугление Firefox */
+	-webkit-border-radius: 2px 2px 2px 2px; /* откугление Safari */
+}
+.rgm_ctstory {margin-bottom:8px; }
+.rgm_ctstory ul{
+	list-style-type: none;
+	padding-left:0px;
+}
+.rgm_ctstory li{
+	background:#e6e6e6;
+	margin:2px 1px;;
+	border-radius: 2px 2px 2px 2px; /* откугление */
+	-moz-border-radius: 2px 2px 2px 2px; /* откугление Firefox */
+	-webkit-border-radius: 2px 2px 2px 2px; /* откугление Safari */
+}
+.rgm_ctstory li:hover{
+	background:#678059;
+}
+.rgm_ctstory li a{
+	padding:5px 0px 5px 10px;
+	color:#737373;
+	text-decoration:none;
+    display: block;
+	font-size:11px;
+}
+.rgm_ctstory li a:hover{
+	color:#fff;
+}
+
+
+.novist{
+	padding-bottom:12px;
+}
+.novist_new{
+	background:  repeat-x url(images/menunew.png);
+	height:24px;
+	padding-top:6px;
+	padding-left:10px;
+	color:#f7f7f7;
+	font-size:12px;
+	 text-shadow:#3f5233 0px -1px 0px;
+	 font-weight:bold;
+	border-radius: 2px 2px 2px 2px;
+	-moz-border-radius: 2px 2px 2px 2px; 
+	-webkit-border-radius: 2px 2px 2px 2px; 
+}
+.novist_new a{
+	color:#FFF;
+	text-decoration:none;
+}
+.novist_avtorinfo{
+	background: #e6e6e6;
+	color:#4d4d4d;
+	font-size:10px;
+	padding-bottom:3px;
+	border-radius: 2px 2px 2px 2px;
+	-moz-border-radius: 2px 2px 2px 2px;
+	-webkit-border-radius: 2px 2px 2px 2px; 
+}
+.novist_avtorinfo span{
+	padding-left:6px;
+}
+.novist_avtorinfo span a{
+	color:#4d4d4d;
+	font-weight:bold;
+}
+.novist_avtorinfo span a:hover{
+	color:#526647;
+	font-weight:bold;
+}
+.novist_text{
+	padding:5px;
+	color:#4d4d4d;
+	font: 11px/1.32 Tahoma, Arial, Helvetica, sans-serif;
+}
+.novist_tag{
+	float:left;
+	padding-left:5px;
+}
+.novist_tag ul{
+	list-style-type: none;
+	padding-left:0px;
+}
+.novist_tag ul li{
+	float:left;
+}
+.novist_tag ul li a{
+	text-decoration:none;
+	font-size:11px;
+	color:#666666;
+	padding:0 10px;
+	margin:0px 2px;
+	background:#e6e6e6;
+	text-shadow:#fff 1px 1px;
+-webkit-border-radius: 40px 10px;
+border-radius: 40px 10px;
+}
+.novist_tag ul li a:hover{
+	background:#526647;
+	color:#fff;
+	text-shadow:#33432a 1px 1px;
+}
+.novist_dalee{
+	float:right;
+	text-transform: uppercase;
+	font-size:10px;
+	font-weight:bold;
+	padding-right:5px; 
+}
+.novist_dalee a{
+	color:#526647;
+	text-decoration:none;	
+}
+.novist_dalee a:hover{
+	color:#658155;
+}
+.footer{
+	margin-top:20px;
+	border-top: 1px solid  #dcdcdc;
+	padding:5px 6px;
+	color:#4d4d4d;
+	font-size:11px;
+}
+.footer span{
+	font-weight:bold;
+}
