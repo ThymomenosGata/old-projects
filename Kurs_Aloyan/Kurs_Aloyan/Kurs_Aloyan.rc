@@ -1,0 +1,284 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// русский resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_KURS_ALOYAN         ICON                    "Kurs_Aloyan.ico"
+IDI_SMALL               ICON                    "small.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_KURS_ALOYAN MENU 
+BEGIN
+    POPUP "&Файл"
+    BEGIN
+        MENUITEM "В&ыход",                      IDM_EXIT
+    END
+    MENUITEM "Обработка",                   ID_VIEW
+    POPUP "Логотип"
+    BEGIN
+        MENUITEM "Логотип",                     ID_LOGO
+        MENUITEM "Реклама",                     ID_TEXT
+        POPUP "Цвет логотипа"
+        BEGIN
+            MENUITEM "Вариант 1",                   ID_CV1
+            MENUITEM "Вариант 2",                   ID_CV2
+            MENUITEM "Вариант 3",                   ID_CV3
+        END
+        POPUP "Цвет рекламы"
+        BEGIN
+            MENUITEM "Вариант 1",                   ID_TXT1
+            MENUITEM "Вариант 2",                   ID_TXT2
+            MENUITEM "Вариант 3",                   ID_TXT3
+        END
+    END
+    POPUP "&Справка"
+    BEGIN
+        MENUITEM "&О программе ...",            IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_KURS_ALOYAN ACCELERATORS 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 262, 105
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "О проекте Kurs_Aloyan"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ОК",IDOK,205,84,50,14,WS_GROUP
+    CONTROL         134,IDC_STATIC,"Static",SS_BITMAP,7,7,67,78
+    LTEXT           "Курсовая работа",IDC_STATIC,134,16,59,8
+    LTEXT           "Агаси Алоян",IDC_STATIC,89,45,43,8
+END
+
+IDD_VIEW DIALOGEX 0, 0, 463, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ОК",IDOK,349,159,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,406,159,50,14
+    LISTBOX         IDC_LIST1,7,19,449,119,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Добавить",IDC_GET,7,143,50,14
+    PUSHBUTTON      "Пометить",IDC_MARK,7,159,50,14
+    PUSHBUTTON      "Снять",IDC_UNMARK,59,159,50,14
+    PUSHBUTTON      "Удалить",IDC_DEL,59,143,49,14
+    PUSHBUTTON      "Удалить помеченую запись",IDC_DELETED,116,159,102,14
+    PUSHBUTTON      "ПОИСК",IDC_SERCH,115,143,104,14
+    PUSHBUTTON      "Изменить",IDC_EDIT,223,143,116,14
+    PUSHBUTTON      "Обновить информацию",IDC_RELOAD,224,159,114,14
+    LTEXT           "Шифр изделия",IDC_STATIC,7,7,51,8
+    LTEXT           "Трудоемкость",IDC_STATIC,73,7,49,8
+    LTEXT           "Коэфф.",IDC_STATIC,145,7,26,8
+    LTEXT           "Плановый фонд",IDC_STATIC,191,7,55,8
+END
+
+IDD_GET DIALOGEX 0, 0, 316, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ОК",IDOK,205,159,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,259,159,50,14
+    EDITTEXT        IDC_SHI,85,24,147,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRUD,87,46,146,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_KEF,86,68,148,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLAN,86,91,149,14,ES_AUTOHSCROLL
+    LTEXT           "Шифр изделия",IDC_STATIC,7,27,51,8
+    LTEXT           "Трудоемкость изгот.",IDC_STATIC,7,49,72,8
+    LTEXT           "Коэфф. произв. мощн.",IDC_STATIC,7,73,77,8
+    LTEXT           "План. фонд раб. обор.",IDC_STATIC,7,96,78,8
+END
+
+IDD_SERCH DIALOGEX 0, 0, 409, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ОК",IDOK,285,159,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,352,159,50,14
+    EDITTEXT        IDC_POISKF,7,7,89,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Поиск",IDC_POISK,107,7,50,14
+    LISTBOX         IDC_LIST2,7,28,395,121,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_EDIT1 DIALOGEX 0, 0, 288, 146
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ОК",IDOK,169,125,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,231,125,50,14
+    EDITTEXT        IDC_EDIT1,109,28,136,14,ES_AUTOHSCROLL
+    LTEXT           "Ведите шифр изделия",IDC_STATIC,17,33,76,8
+    COMBOBOX        IDC_EDIT,107,57,159,52,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Что вы хотите изменить",IDC_STATIC,15,60,84,8
+    EDITTEXT        IDC_EDIT2,108,84,138,14,ES_AUTOHSCROLL
+    LTEXT           "Введите новое значение",IDC_STATIC,15,87,85,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 456
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_GET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_SERCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 402
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_EDIT1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 281
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_PHOTO               BITMAP                  "myphoto.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "Kurs_Aloyan"
+    IDC_KURS_ALOYAN         "KURS_ALOYAN"
+END
+
+#endif    // русский resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
